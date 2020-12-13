@@ -7,14 +7,14 @@ body {
     padding: 0;
     background-color: dimgrey;
     display: flex;
-    /*justify-content: center;*/
+    justify-content: center;
     align-items: center;
     min-height: 100vh;
+    min-width: 100vw;
 }
 
 .piano {
     display: flex;
-    margin-left: 300px;
 }
 
 
