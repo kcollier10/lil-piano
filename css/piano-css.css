@@ -1,0 +1,35 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rebeccapurple;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.piano {
+    display: flex;
+}
+
+.key {
+
+}
+
+.white {
+    background: white;
+    width: 150px;
+    height: 600px;
+    border: 1px solid black;
+
+}
+
+.black {
+    background: black;
+    width: 90px;
+    height: 350px;
+}
+
