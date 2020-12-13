@@ -7,6 +7,7 @@ body {
     padding: 0;
     background-color: dimgrey;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
@@ -28,6 +29,7 @@ body {
 /* cannot add space between classes here */
 .white.active {
     background: dodgerblue;
+    border: 1px solid black;
 }
 
 .black {
@@ -41,5 +43,28 @@ body {
 
 .black.active {
     background: dodgerblue;
+    border: 1px solid black;
 }
 
+.keyboard-keys {
+    padding: 10px;
+    border: 2px ridge black;
+}
+
+.directions {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+}
+
+.top {
+    margin-bottom: 5%;
+    background: black;
+    color: white;
+}
+
+.bottom {
+    margin-top: 5%;
+    background: white;
+    color: black;
+}
