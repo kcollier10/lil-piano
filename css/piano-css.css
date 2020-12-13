@@ -5,31 +5,32 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: rebeccapurple;
+    background-color: dimgrey;
     display: flex;
-    justify-content: center;
+    /*justify-content: center;*/
     align-items: center;
+    min-height: 100vh;
 }
 
 .piano {
     display: flex;
+    margin-left: 300px;
 }
 
-.key {
-
-}
 
 .white {
     background: white;
-    width: 150px;
-    height: 600px;
+    width: 75px;
+    height: 300px;
     border: 1px solid black;
-
 }
 
 .black {
     background: black;
-    width: 90px;
-    height: 350px;
+    width: 46px;
+    height: 175px;
+    margin-left: -23px;
+    margin-right: -23px;
+    z-index: 1;
 }
 
