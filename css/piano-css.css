@@ -25,6 +25,11 @@ body {
     border: 1px solid black;
 }
 
+/* cannot add space between classes here */
+.white.active {
+    background: dodgerblue;
+}
+
 .black {
     background: black;
     width: 46px;
@@ -32,5 +37,9 @@ body {
     margin-left: -23px;
     margin-right: -23px;
     z-index: 1;
+}
+
+.black.active {
+    background: dodgerblue;
 }
 
