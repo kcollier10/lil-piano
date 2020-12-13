@@ -42,3 +42,8 @@ document.addEventListener('keydown', e => {
     }
 })
 
+//to-do:
+
+// timing on the color indicator
+// refactor to dynamic JS to practice
+
