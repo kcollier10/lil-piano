@@ -6,7 +6,6 @@ const whiteKeysSelector = document.querySelectorAll('.key.white');
 const blackKeysSelector = document.querySelectorAll('.key.black');
 
 
-
 // data note and id must be matching for this to work
 function play (key) {
     const sound = document.getElementById(key.dataset.note)
@@ -36,7 +35,7 @@ document.addEventListener('keydown', e => {
         play(whiteKeysSelector[whiteKeyArr]);
     }
     // get all of our white keys and get it for the index of that white key arr
-    // finding index of key we pressed and then corresponding to index of array
+    // finding index of key we pressed and then matching to index of array
     if (blackKeyArr > -1) {
         play(blackKeysSelector[blackKeyArr]);
     }
