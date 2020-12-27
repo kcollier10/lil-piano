@@ -79,25 +79,68 @@ body {
 }
 
 .cymbal {
-    height: 50px;
-    width: 50px;
+    height: 100px;
+    width: 100px;
     background-color: darkgoldenrod;
     border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 5px 2px rgba(0,0,0,.35);
+    right: 5px;
 }
 
 .drum {
-    height: 50px;
-    width: 50px;
+    height: 100px;
+    width: 100px;
     background-color: white;
     border: 5px solid red;
     border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 5px 2px rgba(0,0,0,.35);
 }
 
 .drums {
     display: flex;
     margin-top: 50px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
 
 .drum-directions {
     display: flex;
+}
+
+.break {
+    flex-basis: 100%;
+    height: 0;
+}
+
+.crash-cymbal {
+    margin-right: 200px;
+}
+
+.hi-hat-cymbals {
+    margin-right: 200px;
+}
+
+.rack-toms {
+    margin-right: 150px;
+}
+
+.snare-drum {
+    margin-right: 200px;
+}
+
+.bass-drum, .ride-cymbal {
+    height: 200px;
+    width: 200px;
+}
+
+.floor-tom, .snare-drum, .ride-cymbal {
+    height: 150px;
+    width: 150px;
 }
