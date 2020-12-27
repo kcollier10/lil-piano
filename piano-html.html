@@ -27,15 +27,6 @@
     <div class="key white" data-note="C"></div>
 </div>
 
-<div class="drums">
-    <div class="drum ride-cymbal"></div>
-    <div class="drum crash-cymbal"></div>
-    <div class="drum rack-toms"></div>
-    <div class="drum floor-tom"></div>
-    <div class="drum hi-hat-cymbals"></div>
-    <div class="drum snare-drum"></div>
-    <div class="drum bass-drum"></div>
-</div>
 
 <!-- add layout for keypress event keys under keyboard -->
 <div class="directions">
@@ -54,6 +45,27 @@
     <div class="keyboard-keys bottom"><</div>
 </div>
 
+<div class="drums">
+    <div class="cymbal ride-cymbal" data-note="ride-cymbal"></div>
+    <div class="cymbal crash-cymbal" data-note="crash-cymbal"></div>
+    <div class="drum rack-toms" data-note="rack-toms"></div>
+    <div class="drum floor-tom" data-note="floor-tom"></div>
+    <div class="cymbal hi-hat-cymbals" data-note="hi-hat-cymbals"></div>
+    <div class="drum snare-drum" data-note="snare-drum"></div>
+    <div class="drum bass-drum" data-note="bass-drum"></div>
+</div>
+
+<div class="drum-directions">
+    <div class="number-keys">1</div>
+    <div class="number-keys">2</div>
+    <div class="number-keys">3</div>
+    <div class="number-keys">4</div>
+    <div class="number-keys">5</div>
+    <div class="number-keys">6</div>
+    <div class="number-keys">7</div>
+</div>
+
+
 <audio id="C" src="piano-notes/C.wav"></audio>
 <audio id="Csharp" src="piano-notes/Csharp.wav"></audio>
 <audio id="D" src="piano-notes/D.wav"></audio>
@@ -66,6 +78,15 @@
 <audio id="A" src="piano-notes/A.wav"></audio>
 <audio id="Asharp" src="piano-notes/Asharp.wav"></audio>
 <audio id="B" src="piano-notes/B.wav"></audio>
+
+<audio id="ride-cymbal" src="drum-notes/ride-cymbal.wav"></audio>
+<audio id="crash-cymbal" src="drum-notes/crash-cymbal.wav"></audio>
+<audio id="rack-toms" src="drum-notes/rack-toms.wav"></audio>
+<audio id="floor-toms" src="drum-notes/floor-tom.wav"></audio>
+<audio id="hi-hat-cymbals" src="drum-notes/hi-hat-cymbal.wav"></audio>
+<audio id="snare-drum" src="drum-notes/ride-cymbal.wav"></audio>
+<audio id="bass-drum" src="drum-notes/ride-cymbal.wav"></audio>
+
 
 
 <script src="js/piano-js.js"></script>

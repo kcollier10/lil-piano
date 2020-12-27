@@ -77,3 +77,27 @@ body {
     color: black;
     border-radius: 5%;
 }
+
+.cymbal {
+    height: 50px;
+    width: 50px;
+    background-color: darkgoldenrod;
+    border-radius: 50%;
+}
+
+.drum {
+    height: 50px;
+    width: 50px;
+    background-color: white;
+    border: 5px solid red;
+    border-radius: 50%;
+}
+
+.drums {
+    display: flex;
+    margin-top: 50px;
+}
+
+.drum-directions {
+    display: flex;
+}
