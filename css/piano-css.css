@@ -27,7 +27,7 @@ body {
     border: 1px solid black;
     background-color: black;
     color: black;
-    margin: 0 auto;
+    margin-bottom: 50px;
 }
 
 .tabs button {
@@ -180,24 +180,30 @@ body {
 }
 
 .crash-cymbal {
-    margin-right: 200px;
+    margin-right: 250px;
 }
 
 .hi-hat-cymbals {
-    margin-right: 200px;
+    margin-right: 50px;
+    margin-left: -20px;
 }
 
 .rack-toms {
-    margin-right: 150px;
+    /*margin-right: 150px;*/
 }
 
 .snare-drum {
-    margin-right: 200px;
+    margin-right: 100px;
+    margin-left: 100px;
 }
 
 .bass-drum, .ride-cymbal {
     height: 200px;
     width: 200px;
+}
+
+.bass-drum {
+    margin-left: 115px;
 }
 
 .floor-tom, .snare-drum, .ride-cymbal {
