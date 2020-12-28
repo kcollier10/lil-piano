@@ -11,18 +11,17 @@
 </head>
 <body>
 
-<header>
-    <div class="nav"></div>
-</header>
+<!--<div class="nav"></div>-->
 
 <div class="tabs">
-    <div class="tabs-list"></div>
-    <button class="tab-links active" id="tab-piano">Piano</button>
-    <button class="tab-links" id="tab-drums">Drums</button>
+    <div class="tabs-list">
+        <button class="tab-links" id="tab-piano"><a href="#lil-piano">Piano</a></button>
+        <button class="tab-links" id="tab-drums"><a href="#lil-drumset">Drums</a></button>
+    </div>
 </div>
 
-<main>
-    <div id="lil-piano" class="tab-content active">
+
+    <div id="lil-piano" class="tab-content">
         <div class="piano">
             <div class="key white" data-note="C"></div>
             <div class="key black" data-note="Csharp"></div>
@@ -101,7 +100,7 @@
     <audio id="floor-tom" src="drum-notes/floor-tom.wav"></audio>
     <audio id="snare-drum" src="drum-notes/snare-drum.wav"></audio>
     <audio id="bass-drum" src="drum-notes/bass-drum.wav"></audio>
-</main>
+
 
 <footer>
 </footer>

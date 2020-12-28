@@ -68,6 +68,16 @@
         };
     }
 
+    $(".tabs-list .tab-links").click(function() {
+        let tabChoice = $(this).find("a").attr("href");
+        $(".tabs-list .tab-links, .tabs div.tab-content").removeClass("active");
+
+        $(".tab-content").hide();
+        $(tabChoice).show();
+        $(this).addClass("active");
+
+    });
+
 
 
 
