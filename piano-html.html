@@ -11,87 +11,101 @@
 </head>
 <body>
 
-<div class="piano">
-    <div class="key white" data-note="C"></div>
-    <div class="key black" data-note="Csharp"></div>
-    <div class="key white" data-note="D"></div>
-    <div class="key black" data-note="Dsharp"></div>
-    <div class="key white" data-note="E"></div>
-    <div class="key white" data-note="F"></div>
-    <div class="key black" data-note="Fsharp"></div>
-    <div class="key white" data-note="G"></div>
-    <div class="key black" data-note="Gsharp"></div>
-    <div class="key white" data-note="A"></div>
-    <div class="key black" data-note="Asharp"></div>
-    <div class="key white" data-note="B"></div>
-    <div class="key white" data-note="C"></div>
+<!--<div class="nav"></div>-->
+
+<div class="tabs">
+    <div class="tabs-list">
+        <button class="tab-links" id="tab-piano"><a href="#lil-piano">Piano</a></button>
+        <button class="tab-links" id="tab-drums"><a href="#lil-drumset">Drums</a></button>
+    </div>
 </div>
 
 
-<!-- add layout for keypress event keys under keyboard -->
-<div class="directions">
-    <div class="keyboard-keys bottom">Z</div>
-    <div class="keyboard-keys top">S</div>
-    <div class="keyboard-keys bottom">X</div>
-    <div class="keyboard-keys top">D</div>
-    <div class="keyboard-keys bottom">C</div>
-    <div class="keyboard-keys bottom">V</div>
-    <div class="keyboard-keys top">G</div>
-    <div class="keyboard-keys bottom">B</div>
-    <div class="keyboard-keys top">H</div>
-    <div class="keyboard-keys bottom">N</div>
-    <div class="keyboard-keys top">J</div>
-    <div class="keyboard-keys bottom">M</div>
-    <div class="keyboard-keys bottom"><</div>
-</div>
+    <div id="lil-piano" class="tab-content">
+        <div class="piano">
+            <div class="key white" data-note="C"></div>
+            <div class="key black" data-note="Csharp"></div>
+            <div class="key white" data-note="D"></div>
+            <div class="key black" data-note="Dsharp"></div>
+            <div class="key white" data-note="E"></div>
+            <div class="key white" data-note="F"></div>
+            <div class="key black" data-note="Fsharp"></div>
+            <div class="key white" data-note="G"></div>
+            <div class="key black" data-note="Gsharp"></div>
+            <div class="key white" data-note="A"></div>
+            <div class="key black" data-note="Asharp"></div>
+            <div class="key white" data-note="B"></div>
+            <div class="key white" data-note="C"></div>
+        </div>
+        <div class="piano-directions">
+            <div class="keyboard-keys bottom">Z</div>
+            <div class="keyboard-keys top">S</div>
+            <div class="keyboard-keys bottom">X</div>
+            <div class="keyboard-keys top">D</div>
+            <div class="keyboard-keys bottom">C</div>
+            <div class="keyboard-keys bottom">V</div>
+            <div class="keyboard-keys top">G</div>
+            <div class="keyboard-keys bottom">B</div>
+            <div class="keyboard-keys top">H</div>
+            <div class="keyboard-keys bottom">N</div>
+            <div class="keyboard-keys top">J</div>
+            <div class="keyboard-keys bottom">M</div>
+            <div class="keyboard-keys bottom"><</div>
+        </div>
+    </div>
 
-<div class="drumset">
-    <div class="drums cymbal crash-cymbal" data-sound="crash-cymbal">CRASH</div>
-    <div class="drums cymbal ride-cymbal" data-sound="ride-cymbal">RIDE</div>
-    <div class="break"></div>
-    <div class="drums cymbal hi-hat-cymbals" data-sound="hi-hat-cymbals">HI HAT</div>
-    <div class="drums drum rack-toms" data-sound="rack-toms">RACK</div>
-    <div class="break"></div>
-    <div class="drums drum snare-drum" data-sound="snare-drum">SNARE</div>
-    <div class="drums drum floor-tom" data-sound="floor-tom">FLOOR</div>
-    <div class="break"></div>
-    <div class="drums drum bass-drum" data-sound="bass-drum">BASS</div>
-</div>
-
-<div class="drum-directions">
-    <div class="number-keys">1</div>
-    <div class="number-keys">2</div>
-    <div class="number-keys">3</div>
-    <div class="number-keys">4</div>
-    <div class="number-keys">5</div>
-    <div class="number-keys">6</div>
-    <div class="number-keys">7</div>
-</div>
-
-
-<audio id="C" src="piano-notes/C.wav"></audio>
-<audio id="Csharp" src="piano-notes/Csharp.wav"></audio>
-<audio id="D" src="piano-notes/D.wav"></audio>
-<audio id="Dsharp" src="piano-notes/Dsharp.wav"></audio>
-<audio id="E" src="piano-notes/E.wav"></audio>
-<audio id="F" src="piano-notes/F.wav"></audio>
-<audio id="Fsharp" src="piano-notes/Fsharp.wav"></audio>
-<audio id="G" src="piano-notes/G.wav"></audio>
-<audio id="Gsharp" src="piano-notes/Gsharp.wav"></audio>
-<audio id="A" src="piano-notes/A.wav"></audio>
-<audio id="Asharp" src="piano-notes/Asharp.wav"></audio>
-<audio id="B" src="piano-notes/B.wav"></audio>
-
-<audio id="crash-cymbal" src="drum-notes/crash-cymbal.wav"></audio>
-<audio id="ride-cymbal" src="drum-notes/ride-cymbal.wav"></audio>
-<audio id="hi-hat-cymbals" src="drum-notes/hi-hat-cymbal.wav"></audio>
-<audio id="rack-toms" src="drum-notes/rack-toms.wav"></audio>
-<audio id="floor-tom" src="drum-notes/floor-tom.wav"></audio>
-<audio id="snare-drum" src="drum-notes/snare-drum.wav"></audio>
-<audio id="bass-drum" src="drum-notes/bass-drum.wav"></audio>
+    <div id="lil-drumset" class="tab-content">
+        <div class="drumset">
+            <div class="drums cymbal crash-cymbal" data-sound="crash-cymbal">CRASH</div>
+            <div class="drums cymbal ride-cymbal" data-sound="ride-cymbal">RIDE</div>
+            <div class="break"></div>
+            <div class="drums cymbal hi-hat-cymbals" data-sound="hi-hat-cymbals">HI HAT</div>
+            <div class="drums drum rack-toms" data-sound="rack-toms">RACK</div>
+            <div class="break"></div>
+            <div class="drums drum snare-drum" data-sound="snare-drum">SNARE</div>
+            <div class="drums drum floor-tom" data-sound="floor-tom">FLOOR</div>
+            <div class="break"></div>
+            <div class="drums drum bass-drum" data-sound="bass-drum">BASS</div>
+        </div>
+        <div class="drum-directions">
+            <div class="number-keys">1</div>
+            <div class="number-keys">2</div>
+            <div class="number-keys">3</div>
+            <div class="number-keys">4</div>
+            <div class="number-keys">5</div>
+            <div class="number-keys">6</div>
+            <div class="number-keys">7</div>
+        </div>
+    </div>
 
 
 
+    <audio id="C" src="piano-notes/C.wav"></audio>
+    <audio id="Csharp" src="piano-notes/Csharp.wav"></audio>
+    <audio id="D" src="piano-notes/D.wav"></audio>
+    <audio id="Dsharp" src="piano-notes/Dsharp.wav"></audio>
+    <audio id="E" src="piano-notes/E.wav"></audio>
+    <audio id="F" src="piano-notes/F.wav"></audio>
+    <audio id="Fsharp" src="piano-notes/Fsharp.wav"></audio>
+    <audio id="G" src="piano-notes/G.wav"></audio>
+    <audio id="Gsharp" src="piano-notes/Gsharp.wav"></audio>
+    <audio id="A" src="piano-notes/A.wav"></audio>
+    <audio id="Asharp" src="piano-notes/Asharp.wav"></audio>
+    <audio id="B" src="piano-notes/B.wav"></audio>
+
+    <audio id="crash-cymbal" src="drum-notes/crash-cymbal.wav"></audio>
+    <audio id="ride-cymbal" src="drum-notes/ride-cymbal.wav"></audio>
+    <audio id="hi-hat-cymbals" src="drum-notes/hi-hat-cymbal.wav"></audio>
+    <audio id="rack-toms" src="drum-notes/rack-toms.wav"></audio>
+    <audio id="floor-tom" src="drum-notes/floor-tom.wav"></audio>
+    <audio id="snare-drum" src="drum-notes/snare-drum.wav"></audio>
+    <audio id="bass-drum" src="drum-notes/bass-drum.wav"></audio>
+
+
+<footer>
+</footer>
+
+<script src="js/jquery.js"></script>
 <script src="js/piano-js.js"></script>
 </body>
 </html>
