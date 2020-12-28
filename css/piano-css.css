@@ -144,3 +144,13 @@ body {
     height: 150px;
     width: 150px;
 }
+
+.cymbal.active {
+    background: red;
+    border: 1px solid black;
+}
+
+.drum.active {
+    background: red;
+    border: 1px solid black;
+}

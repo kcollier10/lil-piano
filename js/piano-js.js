@@ -36,8 +36,8 @@ function playDrums (key) {
     })
 }
 
-keys.forEach(key => {
-    key.addEventListener('click', () => play(key))
+drums.forEach(key => {
+    key.addEventListener('click', () => playDrums(key))
 })
 
 // keypress events
