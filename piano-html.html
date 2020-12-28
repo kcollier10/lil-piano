@@ -16,12 +16,13 @@
 </header>
 
 <div class="tabs">
-    <button class="tablinks" id="tabPiano">Piano</button>
-    <button class="tablinks" id="tabDrums">Drums</button>
+    <div class="tabs-list"></div>
+    <button class="tab-links active" id="tab-piano">Piano</button>
+    <button class="tab-links" id="tab-drums">Drums</button>
 </div>
 
 <main>
-    <div id="lil-piano" class="tabcontent">
+    <div id="lil-piano" class="tab-content active">
         <div class="piano">
             <div class="key white" data-note="C"></div>
             <div class="key black" data-note="Csharp"></div>
@@ -37,7 +38,7 @@
             <div class="key white" data-note="B"></div>
             <div class="key white" data-note="C"></div>
         </div>
-        <div class="directions">
+        <div class="piano-directions">
             <div class="keyboard-keys bottom">Z</div>
             <div class="keyboard-keys top">S</div>
             <div class="keyboard-keys bottom">X</div>
@@ -54,7 +55,7 @@
         </div>
     </div>
 
-    <div id="lil-drumset" class="tabcontent">
+    <div id="lil-drumset" class="tab-content">
         <div class="drumset">
             <div class="drums cymbal crash-cymbal" data-sound="crash-cymbal">CRASH</div>
             <div class="drums cymbal ride-cymbal" data-sound="ride-cymbal">RIDE</div>
