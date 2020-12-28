@@ -229,11 +229,58 @@ body {
     align-items: center;
 }
 .bars {
-    height: 250px;
-    width: 50px;
     border: 5px solid black;
+    margin: 0 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3em;
+    font-weight: bold;
+    font-family: Impact, serif;
+    opacity: 80%;
+    color: black;
 }
 
+.C-bar {
+    height: 400px;
+    width: 100px;
+    background-color: red;
+}
+.D-bar {
+    height: 375px;
+    width: 100px;
+    background-color: orange;
+}
+.E-bar {
+    height: 350px;
+    width: 100px;
+    background-color: yellow;
+}
+.F-bar {
+    height: 325px;
+    width: 100px;
+    background-color: green;
+}
+.G-bar {
+    height: 300px;
+    width: 100px;
+    background-color: blue;
+}
+.A-bar {
+    height: 275px;
+    width: 100px;
+    background-color: blueviolet;
+}
+.B-bar{
+    height: 250px;
+    width: 100px;
+    background-color: indigo;
+}
+.C-bar-2 {
+    height: 225px;
+    width: 100px;
+    background-color: red;
+}
 /* media queries */
 /*@media screen and (max-width: 360px) {*/
 /*    .tabs {*/
