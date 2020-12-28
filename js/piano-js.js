@@ -3,12 +3,13 @@
     const whiteKeys = ['z', 'x', 'c', 'v', 'b', 'n', 'm', ','];
     const blackKeys = ['s', 'd', 'g', 'h', 'j'];
 
-    const keys = document.querySelectorAll(".key");
+    const keys = document.querySelectorAll('.key');
     const whiteKeysSelector = document.querySelectorAll('.key.white');
     const blackKeysSelector = document.querySelectorAll('.key.black');
-    const drums = document.querySelectorAll(".drums");
-    const drumsCymbals = document.querySelectorAll(".drums.cymbal");
-    const drumsDrum = document.querySelectorAll(".drums.drum");
+    const drums = document.querySelectorAll('.drums');
+    const drumsCymbals = document.querySelectorAll('.drums.cymbal');
+    const drumsDrum = document.querySelectorAll('.drums.drum');
+    const bars = document.querySelectorAll('.bars');
 
     // piano notes
     // data note and id must be matching for this to work
@@ -42,7 +43,21 @@
         key.addEventListener('click', () => playDrums(key))
     })
 
-    // keypress events
+    function playXylophone(key) {
+        const sound = document.getElementById(key.dataset.bar)
+        sound.currentTime = 0;
+        sound.play();
+        key.classList.add('active');
+        sound.addEventListener('ended', () => {
+            key.classList.remove('active');
+        })
+    }
+
+    bars.forEach(key => {
+        key.addEventListener('click', () => playXylophone(key))
+    })
+
+    // keypress events --------------------------------------
     document.addEventListener('keydown', e => {
         if (e.repeat) {
             return;
@@ -60,13 +75,6 @@
             play(blackKeysSelector[blackKeyArr]);
         }
     })
-
-    let pianoTabEventListener = document.querySelector("#tabPiano");
-    if (pianoTabEventListener) {
-        pianoTabEventListener.onclick = function () {
-            document.querySelector("#lil-piano")
-        };
-    }
 
     $(".tabs-list .tab-links").click(function() {
         let tabChoice = $(this).find("a").attr("href");

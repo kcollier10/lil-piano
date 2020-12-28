@@ -17,6 +17,7 @@
     <div class="tabs-list">
         <button class="tab-links" id="tab-piano"><a href="#lil-piano">Piano</a></button>
         <button class="tab-links" id="tab-drums"><a href="#lil-drumset">Drums</a></button>
+        <button class="tab-links" id="tab-xylophone"><a href="#lil-xylophone">Xylophone</a></button>
     </div>
 </div>
 
@@ -60,7 +61,8 @@
             <div class="drums cymbal ride-cymbal" data-sound="ride-cymbal">RIDE</div>
             <div class="break"></div>
             <div class="drums cymbal hi-hat-cymbals" data-sound="hi-hat-cymbals">HI HAT</div>
-            <div class="drums drum rack-toms" data-sound="rack-toms">RACK</div>
+            <div class="drums drum rack-toms rack-toms-1" data-sound="rack-toms">RACK</div>
+            <div class="drums drum rack-toms rack-toms-2" data-sound="rack-toms">RACK</div>
             <div class="break"></div>
             <div class="drums drum snare-drum" data-sound="snare-drum">SNARE</div>
             <div class="drums drum floor-tom" data-sound="floor-tom">FLOOR</div>
@@ -68,17 +70,29 @@
             <div class="drums drum bass-drum" data-sound="bass-drum">BASS</div>
         </div>
         <div class="drum-directions">
-            <div class="number-keys">1</div>
-            <div class="number-keys">2</div>
-            <div class="number-keys">3</div>
-            <div class="number-keys">4</div>
-            <div class="number-keys">5</div>
-            <div class="number-keys">6</div>
-            <div class="number-keys">7</div>
+<!--            <div class="number-keys">1</div>-->
+<!--            <div class="number-keys">2</div>-->
+<!--            <div class="number-keys">3</div>-->
+<!--            <div class="number-keys">4</div>-->
+<!--            <div class="number-keys">5</div>-->
+<!--            <div class="number-keys">6</div>-->
+<!--            <div class="number-keys">7</div>-->
         </div>
     </div>
 
-
+    <div id="lil-xylophone" class="tab-content">
+        <div class="xylophone">
+            <div class="bars C-bar" data-bar="C-bar">C</div>
+            <div class="bars D-bar" data-bar="D-bar">D</div>
+            <div class="bars E-bar" data-bar="E-bar">E</div>
+            <div class="bars F-bar" data-bar="F-bar">F</div>
+            <div class="bars G-bar" data-bar="G-bar">G</div>
+            <div class="bars A-bar" data-bar="A-bar">A</div>
+            <div class="bars B-bar" data-bar="B-bar">B</div>
+            <div class="bars C-bar-2" data-bar="C-bar">C</div>
+        </div>
+        <div class="xylophone-directions"></div>
+    </div>
 
     <audio id="C" src="piano-notes/C.wav"></audio>
     <audio id="Csharp" src="piano-notes/Csharp.wav"></audio>
@@ -101,6 +115,13 @@
     <audio id="snare-drum" src="drum-notes/snare-drum.wav"></audio>
     <audio id="bass-drum" src="drum-notes/bass-drum.wav"></audio>
 
+    <audio id="C-bar" src="xylophone-notes/c.wav"></audio>
+    <audio id="D-bar" src="xylophone-notes/d1.wav"></audio>
+    <audio id="E-bar" src="xylophone-notes/e1.wav"></audio>
+    <audio id="F-bar" src="xylophone-notes/f.wav"></audio>
+    <audio id="G-bar" src="xylophone-notes/g.wav"></audio>
+    <audio id="A-bar" src="xylophone-notes/a.wav"></audio>
+    <audio id="B-bar" src="xylophone-notes/b.wav"></audio>
 
 <footer>
 </footer>
