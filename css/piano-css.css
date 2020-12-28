@@ -221,6 +221,19 @@ body {
     border: 1px solid black;
 }
 
+/* styling for xylophone */
+
+.xylophone {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bars {
+    height: 250px;
+    width: 50px;
+    border: 5px solid black;
+}
+
 /* media queries */
 /*@media screen and (max-width: 360px) {*/
 /*    .tabs {*/

@@ -61,13 +61,6 @@
         }
     })
 
-    let pianoTabEventListener = document.querySelector("#tabPiano");
-    if (pianoTabEventListener) {
-        pianoTabEventListener.onclick = function () {
-            document.querySelector("#lil-piano")
-        };
-    }
-
     $(".tabs-list .tab-links").click(function() {
         let tabChoice = $(this).find("a").attr("href");
         $(".tabs-list .tab-links, .tabs div.tab-content").removeClass("active");
