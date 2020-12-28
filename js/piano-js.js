@@ -4,8 +4,11 @@ const blackKeys = ['s', 'd', 'g', 'h', 'j'];
 const keys = document.querySelectorAll(".key");
 const whiteKeysSelector = document.querySelectorAll('.key.white');
 const blackKeysSelector = document.querySelectorAll('.key.black');
+const drums = document.querySelectorAll(".drums");
+const drumsCymbals = document.querySelectorAll(".drums.cymbal");
+const drumsDrum = document.querySelectorAll(".drums.drum");
 
-
+// piano notes
 // data note and id must be matching for this to work
 function play (key) {
     const sound = document.getElementById(key.dataset.note)
@@ -21,6 +24,21 @@ keys.forEach(key => {
     key.addEventListener('click', () => play(key))
 })
 
+// drum notes
+// data note and id must be matching for this to work
+function playDrums (key) {
+    const sound = document.getElementById(key.dataset.sound)
+    sound.currentTime = 0;
+    sound.play();
+    key.classList.add('active');
+    sound.addEventListener('ended', () => {
+        key.classList.remove('active');
+    })
+}
+
+drums.forEach(key => {
+    key.addEventListener('click', () => playDrums(key))
+})
 
 // keypress events
 document.addEventListener('keydown', e => {
