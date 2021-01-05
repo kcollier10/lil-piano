@@ -7,11 +7,12 @@
     "tone": "^14.7.58"
   },
   "devDependencies": {
-    "webpack": "^5.11.1",
+    "es-dev-server": "^2.0.2",
     "webpack-cli": "^4.3.1"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "es-dev-server --app-index index.html --node-resolve --watch --open"
   },
   "repository": {
     "type": "git",
