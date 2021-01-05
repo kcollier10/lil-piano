@@ -1,0 +1,24 @@
+{
+  "name": "js-piano-tutorial",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "tone": "^14.7.58"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kcollier10/lil-piano.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kcollier10/lil-piano/issues"
+  },
+  "homepage": "https://github.com/kcollier10/lil-piano#readme"
+}
