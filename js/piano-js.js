@@ -1,4 +1,5 @@
 (function () {
+    import * as Tone from '../node_modules/tone/build/Tone.js';
 
     const whiteKeys = ['z', 'x', 'c', 'v', 'b', 'n', 'm', ','];
     const blackKeys = ['s', 'd', 'g', 'h', 'j'];
@@ -83,7 +84,6 @@
         $(".tab-content").hide();
         $(tabChoice).show();
         $(this).addClass("active");
-
     });
 
 
