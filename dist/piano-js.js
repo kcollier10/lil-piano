@@ -1,5 +1,5 @@
-(function () {
     import * as Tone from '../node_modules/tone/build/Tone.js';
+(function () {
 
     const whiteKeys = ['z', 'x', 'c', 'v', 'b', 'n', 'm', ','];
     const blackKeys = ['s', 'd', 'g', 'h', 'j'];
@@ -11,6 +11,7 @@
     const drumsCymbals = document.querySelectorAll('.drums.cymbal');
     const drumsDrum = document.querySelectorAll('.drums.drum');
     const bars = document.querySelectorAll('.bars');
+
 
     // piano notes
     // data note and id must be matching for this to work
