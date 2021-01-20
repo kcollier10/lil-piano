@@ -1,4 +1,4 @@
-    import * as Tone from '../node_modules/tone/build/Tone.js';
+    // import * as Tone from '../node_modules/tone/build/Tone.js';
 (function () {
 
     const whiteKeys = ['z', 'x', 'c', 'v', 'b', 'n', 'm', ','];
